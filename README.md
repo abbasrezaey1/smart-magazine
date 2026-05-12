@@ -27,7 +27,15 @@ A PHP magazine platform for publishing and reading issues, managing submissions,
 2. **Database**
 
    - Create a MySQL database and user with full privileges on that database.
-   - Import your schema (or restore from your own dump). For the article wizard drafts table, see `sql/article_builder_drafts.sql`.
+   - Import the bundled snapshot (schema and data):
+
+     ```bash
+     mysql -u your_user -p your_database < database.sql
+     ```
+
+     The file `database.sql` is a mysqldump of the reference database. For only the scientific-article drafts table on an existing DB, you can instead run `sql/article_builder_drafts.sql`.
+
+   **Note:** A dump may include user or site data from development. For a public fork, consider stripping or anonymizing rows before sharing.
 
 3. **Configuration**
 
@@ -53,6 +61,7 @@ A PHP magazine platform for publishing and reading issues, managing submissions,
 | `lib/` | PHP includes (DB, helpers, scientific article logic) |
 | `templates/` | Smarty `.tpl` views |
 | `libs/` | Smarty library |
+| `database.sql` | Full MySQL dump for local setup |
 | `sql/` | SQL snippets for optional tables |
 | `css/`, `js/`, `plugins/` | Front-end assets |
 

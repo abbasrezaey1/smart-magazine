@@ -12,6 +12,6 @@ Thumbs.db
 .idea/
 .vscode/
 
-# Full database dumps (often large; keep schema under sql/ if you add it)
+# Ad-hoc / duplicate dumps (canonical export for the repo is database.sql)
 xafh7070*.sql
 *_webs*.sql
