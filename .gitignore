@@ -1,0 +1,17 @@
+# Local secrets — copy from lib/sql_connect.example.php
+lib/sql_connect.php
+
+# Smarty compiled templates (regenerated at runtime)
+templates_c/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Full database dumps (often large; keep schema under sql/ if you add it)
+xafh7070*.sql
+*_webs*.sql
