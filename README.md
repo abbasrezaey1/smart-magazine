@@ -71,4 +71,4 @@ Never commit `lib/sql_connect.php`. Only `lib/sql_connect.example.php` belongs i
 
 ## License
 
-Add a `LICENSE` file if you want to specify terms for reuse.
+This project is licensed under the [MIT License](LICENSE).
